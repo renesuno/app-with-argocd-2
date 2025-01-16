@@ -64,7 +64,13 @@ spec:
             - containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: k8s12345
+              value: argocd12345
+            - name: MYSQL_USER
+              value: argocd
+            - name: MYSQL_PASSWORD
+              value: argocd12345
+            - name: MYSQL_DATABASE
+              value: argocd
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysqldata
