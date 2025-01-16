@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: argocd-app-container
-        image: renesuno/app-with-argocd-2:6254150d5c1716e7026a6e95adf00f7814932aa0
+        image: renesuno/app-with-argocd-2:ec99a30b7011230e40c10f16e61af467ee6ce05a
         ports:
           - protocol: TCP
             containerPort: 8080
