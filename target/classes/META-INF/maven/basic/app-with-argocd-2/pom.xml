@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>basic</groupId>
-	<artifactId>app-with-argocd</artifactId>
+	<artifactId>app-with-argocd-2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>app-with-argocd</name>
+	<name>app-with-argocd-2</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
