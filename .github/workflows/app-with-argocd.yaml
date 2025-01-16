@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: renesuno/app-with-argocd
+        repository: renesuno/app-with-argocd-2
         ref: main
         token: ${{ secrets.TOKEN }}
         
@@ -64,7 +64,7 @@ jobs:
     
     - name: Set up Image
       run: |
-        sed -i "s%image: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd:[A-z0-9]*%image: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd:${{ github.sha }}%" ./manifest/argocd-app.yaml
+        sed -i "s%image: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd-2:[A-z0-9]*%image: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd-2:${{ github.sha }}%" ./manifest/argocd-app.yaml
 
     - name: Commit and push changes
       run: |
