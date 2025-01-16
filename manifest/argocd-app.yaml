@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: argocd-app-container
-        image: dockerlecture/app-with-argocd:latest
+        image: renesuno/app-with-argocd:latest
         ports:
           - protocol: TCP
             containerPort: 8080
