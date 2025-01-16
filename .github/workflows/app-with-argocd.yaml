@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: <repository_user>/app-with-argocd
+        repository: renesuno/app-with-argocd
         ref: main
         token: ${{ secrets.TOKEN }}
         
